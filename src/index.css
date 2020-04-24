@@ -76,11 +76,14 @@ form select.form-control{height: 45px;border-radius: 10px;border: 1px solid #EDE
 
   form select.form-control{padding: 0 10px;}
 
-  .home-banner{margin-bottom: 70px;overflow: visible;padding: 3em 0 4em;}
-  .home-banner img {margin: 0;width: 80px;height: 80px;position: absolute;top: calc(4em + 40px);left: 50%;transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);}
+  .home-banner{margin-bottom: 70px;overflow: visible;padding: 3em 0 5em;}
+  .home-banner img {margin: 0;width: 100px;height: 100px;position: absolute;top: calc(5em + 25px);left: 50%;transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);}
 
   .home-categories .grid-3{grid-template-columns: auto auto;grid-column-gap: 15px;grid-row-gap: 15px;}
   .home-categories h3{padding: 15px 10px;font-size: 20px;}
+
+  .home-categories .grid-3 .single-category .cat-infos h4{font-size: 20px;}
+  .home-categories .grid-3 .single-category .cat-infos .product-counter {font-size: 12px;}
 
   footer{display: none;}
 }
