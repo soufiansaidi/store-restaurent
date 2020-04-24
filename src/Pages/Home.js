@@ -67,7 +67,7 @@ const Home = () => {
                     </div>
                 </form> */}
 
-                <div className="home-categories pb-5">
+                <div className="home-categories pb-5 mb-3">
                     <h3>Categories</h3>
                     <div className="grid-3">
                         <div className="single-category">
@@ -113,6 +113,10 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+            
+                <div className="start-ordering">
+                    <Link to="/">Start ordering</Link>
                 </div>
             </div>
         </>

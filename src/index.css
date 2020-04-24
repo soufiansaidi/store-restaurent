@@ -35,6 +35,9 @@ header .logo h1{color: #fff;font-weight: bold;font-size: 20px;}
 .home-banner h2{margin: 0 0 10px;font-weight: bold;font-size: 2.5rem;line-height: 1;}
 .home-banner p{margin: 0;font-size: 18px;}
 
+.start-ordering{width: 100%;display: flex;align-items: center;justify-content: center;overflow: hidden;position: fixed;bottom: 0;left: 0;right: 0;z-index: 99;padding: 6px;}
+.start-ordering a{border-radius: 7px;width: 100%;padding: 10px 15px;display: flex;color: #fff;font-size: 16px;align-items: center;justify-content: center;height: 48px;background: var(--primary);}
+
 section .container{max-width: 900px;width: 100%;}
 
 footer{background-color: #262325;padding: 30px 0;text-align: center;}
