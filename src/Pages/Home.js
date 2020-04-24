@@ -7,10 +7,10 @@ const Home = () => {
         <>
             <Banner />
 
-            <div className="container mt-4 mb-5">
-                <form>
+            <div className="container mt-4">
+                <form className="mt-4">
                     <div class="row">
-                        <div class="col-md-6 mb-md-4 form-group">
+                        <div class="col-6 pr-2 mb-md-4 form-group">
                             <select name="delivery" id="delivery" class="form-control">
                                 <option>Delivery</option>
                                 <option>Delivery</option>
@@ -20,7 +20,7 @@ const Home = () => {
                                 <option>Delivery</option>
                             </select>
                         </div>
-                        <div class="col-md-6 mb-md-4 form-group">
+                        <div class="col-6 pl-2 mb-md-4 form-group">
                             <select name="area" id="area" class="form-control">
                                 <option>Salmiya</option>
                                 <option>Salmiya</option>
@@ -30,7 +30,7 @@ const Home = () => {
                                 <option>Salmiya</option>
                             </select>
                         </div>
-                        <div class="col-md-6 mb-md-4 form-group">
+                        <div class="col-6 pr-2 mb-md-4 form-group">
                             <select name="estimated_time" id="estimated_time" class="form-control">
                                 <option>Estimated Time 1:30 min</option>
                                 <option>Estimated Time 1:30 min</option>
@@ -41,7 +41,7 @@ const Home = () => {
                                 <option>Estimated Time 1:30 min</option>
                             </select>
                         </div>
-                        <div class="col-md-6 mb-md-4 form-group">
+                        <div class="col-6 pl-2 mb-md-4 form-group">
                             <select name="scheduled_time" id="scheduled_time" class="form-control">
                                 <option>Scheduled Time</option>
                                 <option>Scheduled Time</option>
@@ -55,7 +55,7 @@ const Home = () => {
                     </div>
                 </form>
 
-                <div className="home-categories mt-2">
+                <div className="home-categories pb-5">
                     <h3>Categories</h3>
                     <div className="grid-3">
                         <div className="single-category">

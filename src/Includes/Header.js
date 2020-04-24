@@ -1,19 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { MdShoppingCart, MdSentimentSatisfied } from "react-icons/md";
+import { MdShoppingCart, MdSentimentSatisfied, MdMenu } from "react-icons/md";
 
 const Header = () => {
     return (
         <header>
             <div className="container">
-                <div className="row">
-                    <div className="col-md-4 col-xl-3 logo">
+                <div className="row align-items-center">
+                    <div className="col-3 d-md-none toggle-menu"><MdMenu /></div>
+                    <div className="col-6 col-md-4 col-xl-3 logo">
                         <Link to="/">
                             <h1 className="m-0">EasyBurger</h1>
                         </Link>
                     </div>
-                    <div className="col-md-8 col-xl-9 header-right d-flex align-items-center justify-content-end">
+                    <div className="col-3 col-md-8 col-xl-9 header-right d-flex align-items-center justify-content-end">
                         <ul>
                             <li><Link to="/branches">Branches</Link></li>
                             <li><Link to="/about-us">About us</Link></li>
