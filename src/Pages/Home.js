@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Banner from './../Includes/Banner'
 
@@ -8,7 +9,18 @@ const Home = () => {
             <Banner />
 
             <div className="container mt-4">
-                <form className="mt-4">
+                <div className="delivery-pickup mb-3">
+                    <div className="row">
+                        <div className="col-6 text-center border-right">
+                            <Link to="/">Delivery</Link>
+                        </div>
+                        <div className="col-6 text-center">
+                            <Link to="/">Pick Up</Link>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <form className="mt-4">
                     <div class="row">
                         <div class="col-6 pr-2 mb-md-4 form-group">
                             <select name="delivery" id="delivery" class="form-control">
@@ -53,7 +65,7 @@ const Home = () => {
                             </select>
                         </div>
                     </div>
-                </form>
+                </form> */}
 
                 <div className="home-categories pb-5">
                     <h3>Categories</h3>
