@@ -5,23 +5,22 @@ import {
   Route,
 } from "react-router-dom";
 
-import Header from './Includes/Header'
-import Footer from './Includes/Footer'
-
 import Home from './Pages/Home'
+import Login from './Pages/Login'
+import Register from './Pages/Register'
+import Contact from './Pages/Contact'
+import About from './Pages/About'
 
 function App() {
   return (
     <Router>
-        <Header />
-        <section>
-          <Switch>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </section>
-        <Footer />
+      <Switch>
+        <Route path="/" exact><Home /></Route>
+        <Route path="/login"><Login /></Route>
+        <Route path="/sign-up"><Register /></Route>
+        <Route path="/contact"><Contact /></Route>
+        <Route path="/about"><About /></Route>
+      </Switch>
     </Router>
   );
 }

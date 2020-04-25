@@ -1,12 +1,15 @@
 import React from 'react'
 
-const Banner = () => {
+const Banner = ({ logo, title, text, bg = null }) => {
     return (
-        <div className="home-banner" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1560611588-163f295eb145?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)' }}>
+        <div 
+            className="home-banner" 
+            style={{ backgroundImage: 'url('+bg+')' }}
+            >
+            { (logo) && <img src="https://via.placeholder.com/300x300" alt="logo" /> }
             <div className="container text-center">
-                <img src="https://via.placeholder.com/300x300" alt="logo" />
-                <h2>EasyBurger</h2>
-                <p>Lunch & Dinner Menu</p>
+                { (title) && <h2>{ title }</h2> }
+                { (text) && <p>{ text }</p> }
             </div>
         </div>
     )

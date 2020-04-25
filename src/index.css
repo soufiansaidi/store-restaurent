@@ -1,11 +1,19 @@
-body{overflow-x: hidden;}
+body{overflow-x: hidden;font-family: 'Roboto', sans-serif;color: #637381;}
 img{max-width: 100%;}
 
 a, a:hover{text-decoration: none;}
 a, button, i{transition: all .3s;}
+svg{display: block;}
+
+p{font-size: 12px;margin-bottom: 10px;font-weight: 300;}
+
+strong{font-weight: 700;}
+
+input, button, a{box-shadow: none !important;outline: none !important;}
 
 :root{
   --primary: #340032;
+  --second: #62005E;
   --primary-hover: #AE3FA9;
 }
 
@@ -28,10 +36,12 @@ header .logo h1{color: #fff;font-weight: bold;font-size: 20px;}
 .profile{overflow: hidden;position: relative;}
 .profile svg{font-size: 30px;color: #fff;}
 
-.home-banner{overflow: hidden;padding: 4em 0;color: #fff;text-transform: uppercase;position: relative;background-position: center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;}
+.go-back a{color: #fff;font-size: 23px;display: block;}
+
+.home-banner{background-color: var(--primary);overflow: hidden;padding: 0 0 4em;color: #fff;text-transform: uppercase;position: relative;background-position: center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;}
 .home-banner::before{content: "";background: var(--primary);opacity: .6;position: absolute;top: 0;left: 0;bottom: 0;right: 0;z-index: 2;}
-.home-banner .container{z-index: 9;position: relative;}
-.home-banner img{margin: 0 auto 25px;width: 150px;height: 150px;border-radius: 50%;}
+.home-banner .container{z-index: 9;position: relative;overflow: hidden;}
+.home-banner img{margin: 4em auto 25px;width: 150px;height: 150px;border-radius: 50%;position: relative;z-index: 9;display: block;}
 .home-banner h2{margin: 0 0 10px;font-weight: bold;font-size: 2.5rem;line-height: 1;}
 .home-banner p{margin: 0;font-size: 18px;}
 
@@ -63,8 +73,31 @@ form select.form-control{height: 45px;border-radius: 10px;border: 1px solid #EDE
 
 .delivery-pickup a{display: block;padding: 5px;color: #333;}
 
+/* - */
+.login-page{overflow: hidden;}
+h2.title{font-size: 24px;font-weight: 600;letter-spacing: -1px;margin: 0 0 3px;color: var(--primary);}
+p.sub{font-size: 18px;color: var(--primary);}
+.login-page form{overflow: hidden;}
+.login-page form label{font-size: 16px;color: #C9D2D8;margin: 0 0 5px;}
+.login-page form input, .login-page form select, .login-page form textarea{border-radius: 8px;border: 1px solid #eee;color: #637381;}
+.login-page form textarea{height: auto;}
+/* .form-control:-ms-input-placeholder{color: #637381;}
+.form-control:-moz-placeholder{color: #637381;}
+.form-control::-webkit-input-placeholder{color: #637381;} */
+.login-page form button{max-width: 450px;margin: auto;display: block;width: 100%;border: 1px solid var(--second);background-color: var(--second);padding: 13px;text-transform: uppercase;color: #fff;font-weight: 600;font-size: 18px;border-radius: 40px;}
+.login-page form button:hover{background-color: transparent;color: var(--second);}
+.login-page .go-forgot-password{text-align: center;}
+.login-page .go-forgot-password a{color: var(--second);}
+.login-page .go-forgot-password a:hover{text-decoration: underline;}
+.login-page .go-signup{overflow: hidden;}
+.login-page .go-signup a{margin: auto;max-width: 450px;display: block;width: 100%;border: 1px solid var(--second);background-color: transparent;color: var(--second);padding: 13px;text-transform: uppercase;font-weight: 600;font-size: 18px;border-radius: 40px;}
+.login-page .go-signup a:hover{background-color: var(--second);color: #fff;}
+
+.contact-info{color: #637381;}
+.contact-info p{font-size: 14px;margin-bottom: 10px;font-weight: 300;color: #637381;}
+
 @media screen and (max-width: 767px){
-  header{padding: 10px 0;}
+  header{padding: 12.5px 0;}
   header .logo{text-align: center;}
 
   .header-right ul{position: fixed;display: none;}
@@ -79,8 +112,9 @@ form select.form-control{height: 45px;border-radius: 10px;border: 1px solid #EDE
 
   form select.form-control{padding: 0 10px;}
 
-  .home-banner{margin-bottom: 70px;overflow: visible;padding: 3em 0 5em;}
-  .home-banner img {margin: 0;width: 100px;height: 100px;position: absolute;top: calc(5em + 25px);left: 50%;transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);}
+  .home-banner{margin-bottom: 70px;overflow: visible;padding: 0 0 5em;}
+  .home-banner img {margin: 0;width: 100px;height: 100px;position: absolute;bottom: -50px;left: 50%;transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);z-index: 9;}
+  .home-banner h2{margin: 1em 0 10px;}
 
   .home-categories .grid-3{grid-template-columns: auto auto;grid-column-gap: 15px;grid-row-gap: 15px;}
   .home-categories h3{padding: 15px 10px;font-size: 20px;}
@@ -89,6 +123,9 @@ form select.form-control{height: 45px;border-radius: 10px;border: 1px solid #EDE
   .home-categories .grid-3 .single-category .cat-infos .product-counter {font-size: 12px;}
 
   .home-categories h3{margin-bottom: 1.1rem;}
+
+  .page-banner{min-height: 200px;}
+  .page-banner::before{display: none;}
 
   footer{display: none;}
 }
