@@ -5,6 +5,7 @@ import { MdFormatIndentDecrease } from 'react-icons/md'
 
 export default function SingleProduct() {
     const [Qty, setQty] = useState(1)
+    const [instructions, setInstructions] = useState(1)
 
     const Increase = () => {
         let quantity = Qty + 1
@@ -35,12 +36,13 @@ export default function SingleProduct() {
                         </div>
                     </div>
 
-                    <form className="col-12 col-md-6 offset-md-3 mb-5">
-                        <div class="form-group">
-                            <label for="">Add Special Instructions</label>
-                            <textarea rows="5" name="Special_instructions" id="" class="form-control"></textarea>
-                        </div>
-                        <div class="row mt-4 align-items-center justify-content-between">
+                    <div class="form-group col-12">
+                        <label for="">Add Special Instructions</label>
+                        <textarea rows="5" onChange={ (e) => setInstructions(e.val) } value={ setInstructions } class="form-control"></textarea>
+                    </div>
+
+                    <div className="sticky-bar col-12 col-md-6 offset-md-3">
+                        <div class="row align-items-center justify-content-between">
                             <div class="col-6">
                                 <div class="qty-wrap d-flex align-items-center justify-content-between">
                                     <div className="increment" onClick={ () => Decrease() }>-</div>
@@ -52,7 +54,7 @@ export default function SingleProduct() {
                                 <button type="submit">Add to Order</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
 
                 </div>
             </div>
