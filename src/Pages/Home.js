@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Banner from './../Includes/Banner'
+import Menu from './../Includes/Menu'
 import Header from './../Includes/Header'
 import Footer from './../Includes/Footer'
 
@@ -9,6 +10,7 @@ const Home = () => {
     return (
         <>
             <Header />
+            <Menu />
             <section>
                 <Banner title="Easy Burger" text="Deconsyriting the Perfect Burger" logo="aa" bg="https://images.unsplash.com/photo-1560611588-163f295eb145?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" />
                 <div className="container mt-4">

@@ -5,6 +5,8 @@ import {
   Route,
 } from "react-router-dom";
 
+import { ApplicationContextProvider } from './Context/ApplicationContext'
+
 import Home from './Pages/Home'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
@@ -14,13 +16,15 @@ import About from './Pages/About'
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact><Home /></Route>
-        <Route path="/login"><Login /></Route>
-        <Route path="/sign-up"><Register /></Route>
-        <Route path="/contact"><Contact /></Route>
-        <Route path="/about"><About /></Route>
-      </Switch>
+      <ApplicationContextProvider>
+        <Switch>
+          <Route path="/" exact><Home /></Route>
+          <Route path="/login"><Login /></Route>
+          <Route path="/sign-up"><Register /></Route>
+          <Route path="/contact"><Contact /></Route>
+          <Route path="/about"><About /></Route>
+        </Switch>
+      </ApplicationContextProvider>
     </Router>
   );
 }

@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ApplicationContext } from './../Context/ApplicationContext'
 import { Link } from 'react-router-dom'
 
 import { MdShoppingCart, MdSentimentSatisfied, MdMenu } from "react-icons/md";
 
 const Header = () => {
+    const {menu, setMenu} = useContext(ApplicationContext)
+
     return (
         <header>
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-3 d-md-none toggle-menu"><MdMenu /></div>
+                    <div className="col-3 d-md-none toggle-menu" onClick={ ()=> setMenu(!menu) }><MdMenu /></div>
                     <div className="col-6 col-md-4 col-xl-3 logo">
                         <Link to="/">
                             <h1 className="m-0">EasyBurger</h1>

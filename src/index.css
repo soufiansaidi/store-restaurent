@@ -96,6 +96,23 @@ p.sub{font-size: 18px;color: var(--primary);}
 .contact-info{color: #637381;}
 .contact-info p{font-size: 14px;margin-bottom: 10px;font-weight: 300;color: #637381;}
 
+.menu-mobile{position: fixed;top: 0;bottom: 0;left: 0;right: 0;z-index: 99999;opacity: 0;visibility: hidden;}
+.menu-mobile .menu-close{content: "";position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-color: rgba(0,0,0,.7);z-index: 9;}
+.menu-mobile .wrap{position: relative;z-index: 99;height: 100vh;width: 300px;background-color: #fff;left: -305px;}
+.menu-mobile .home-banner{margin: 0;}
+.menu-mobile .menu-top{background-color: var(--second);padding: 70px 0 15px;display: flex;align-items: center;justify-content: space-between;}
+.menu-mobile .menu-top a{color: #fff;text-align: center;text-transform: uppercase;font-size: 12px;display: block;width: 33.333%;}
+.menu-mobile .menu-top a svg{margin: 0 auto 4px;font-size: 25px;}
+.menu-mobile ul{padding: 15px 0;list-style-type: none;margin: 0;}
+.menu-mobile ul li{text-transform: uppercase;font-weight: 600;font-size: 13px;padding: 0 20px;}
+.menu-mobile ul li a{color: var(--second);position: relative;display: block;padding: 10px 0;}
+.menu-mobile ul li a:hover{color: var(--primary);}
+.menu-mobile .my-account{position: absolute;bottom: 0;left: 0;width: 100%;padding: 0 20px;}
+.menu-mobile .my-account a{text-transform: uppercase;font-weight: 600;font-size: 13px;color: var(--second);position: relative;display: block;padding: 10px 0;}
+.menu-mobile .my-account svg, .menu-mobile ul li svg{position: absolute;right: 0;top: 50%;transform: translateY(-50%);-moz-transform: translateY(-50%);webkit-transform: translateY(-50%);font-size: 16px;}
+.menu-mobile.active{visibility: visible;opacity: 1;}
+.menu-mobile.active .wrap{left: 0;}
+
 @media screen and (max-width: 767px){
   header{padding: 12.5px 0;}
   header .logo{text-align: center;}
