@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function Collapse({children}) {
-    const [state, setstate] = useState(false)
+    const [state, setstate] = useState(true)
 
     return (
         <div className={ (state) ? 'active collapse-data' : 'collapse-data' }>
