@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import Header from './../Includes/Header'
-import { MdFormatIndentDecrease } from 'react-icons/md'
 
 export default function SingleProduct() {
     const [Qty, setQty] = useState(1)
@@ -51,7 +51,7 @@ export default function SingleProduct() {
                                 </div>
                             </div>
                             <div class="col-6 d-flex justify-content-end">
-                                <button type="submit">Add to Order</button>
+                                <Link to="/order/contact-infos">Add to Order</Link>
                             </div>
                         </div>
                     </div>

@@ -15,6 +15,10 @@ import About from './Pages/About'
 import Menus from './Pages/Menus'
 import SingleProduct from './Pages/SingleProduct'
 
+import OrderContact from './Pages/OrderContact'
+import OrderDeliveryAddress from './Pages/OrderDeliveryAddress'
+import OrderPayment from './Pages/OrderPayment'
+
 function App() {
   return (
     <Router>
@@ -27,6 +31,9 @@ function App() {
           <Route path="/about"><About /></Route>
           <Route path="/menus"><Menus /></Route>
           <Route path="/product-details/:slug"><SingleProduct /></Route>
+          <Route path="/order/contact-infos"><OrderContact /></Route>
+          <Route path="/order/delivery-address"><OrderDeliveryAddress /></Route>
+          <Route path="/order/payment"><OrderPayment /></Route>
         </Switch>
       </ApplicationContextProvider>
     </Router>
