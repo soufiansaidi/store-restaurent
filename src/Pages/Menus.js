@@ -12,7 +12,7 @@ const Menus = () => {
     return (
         <>
             <Header />
-            <Menu />
+            
             <PageCover />
 
             <section>
