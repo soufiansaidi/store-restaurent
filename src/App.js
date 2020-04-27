@@ -12,6 +12,7 @@ import Login from './Pages/Login'
 import Register from './Pages/Register'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
+import Menus from './Pages/Menus'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/sign-up"><Register /></Route>
           <Route path="/contact"><Contact /></Route>
           <Route path="/about"><About /></Route>
+          <Route path="/menus"><Menus /></Route>
         </Switch>
       </ApplicationContextProvider>
     </Router>

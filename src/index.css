@@ -19,6 +19,8 @@ input, button, a{box-shadow: none !important;outline: none !important;}
 
 /* .container{max-width: 1190px;margin: auto;width: calc(100% - 30px);} */
 
+.color-primary{color: var(--primary);}
+
 header{background-color: var(--primary);padding: 20px 0;}
 header .logo{width: 200px;}
 header .logo h1{color: #fff;font-weight: bold;font-size: 20px;}
@@ -112,6 +114,22 @@ p.sub{font-size: 18px;color: var(--primary);}
 .menu-mobile .my-account svg, .menu-mobile ul li svg{position: absolute;right: 0;top: 50%;transform: translateY(-50%);-moz-transform: translateY(-50%);webkit-transform: translateY(-50%);font-size: 16px;}
 .menu-mobile.active{visibility: visible;opacity: 1;}
 .menu-mobile.active .wrap{left: 0;}
+
+.collapse-data .collapse-title{cursor: pointer;justify-content: center;display: flex;width: 100%;align-items: center;padding: 10px;margin-top: 10px;background-color: #F5F7F9;color: #AEBFCE;text-transform: uppercase;margin-bottom: 10px;}
+.collapse-data .collapse-title svg{margin-left: 10px;}
+.list-products .wrap{background-color: #fff;box-shadow: 0 0 8px 1px #ccc;border-radius: 10px;overflow: hidden;}
+.list-products .single-product-img{overflow: hidden;}
+.list-products .single-product-img img{width: 100%;}
+.list-products h3{margin: 0;font-size: 18px;}
+.list-products h3 a{color: #62747E;}
+.list-products h3 a:hover{color: var(--primary);}
+.list-products .badge{background-color: var(--second);color: #fff;font-size: 11px;padding: 4px 10px;font-weight: normal;border-radius: 25px;}
+.list-products p{margin: 15px 0 5px;}
+
+.collapse-data .collapse-content{display: none;}
+.collapse-data.active .collapse-content{display: block;}
+.collapse-data.active .collapse-title svg{transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);}
+
 
 @media screen and (max-width: 767px){
   header{padding: 12.5px 0;}

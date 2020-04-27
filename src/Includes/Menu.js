@@ -28,7 +28,7 @@ const Menu = ({ logo, title, text, bg = null }) => {
                     </Link>
                 </div>
                 <ul>
-                    <li><Link to="/">Menu <IoIosArrowForward /></Link></li>
+                    <li><Link to="/menus">Menu <IoIosArrowForward /></Link></li>
                     <li><Link to="/">Branches <IoIosArrowForward /></Link></li>
                     <li><Link to="/">About us <IoIosArrowForward /></Link></li>
                     <li><Link to="/">Contact us <IoIosArrowForward /></Link></li>
