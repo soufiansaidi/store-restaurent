@@ -123,13 +123,23 @@ p.sub{font-size: 18px;color: var(--primary);}
 .list-products h3{margin: 0;font-size: 18px;}
 .list-products h3 a{color: #62747E;}
 .list-products h3 a:hover{color: var(--primary);}
-.list-products .badge{background-color: var(--second);color: #fff;font-size: 11px;padding: 4px 10px;font-weight: normal;border-radius: 25px;}
+.list-products .badge, .product-details .badge{background-color: var(--second);color: #fff;font-size: 11px;padding: 4px 10px;font-weight: normal;border-radius: 25px;}
 .list-products p{margin: 15px 0 5px;}
 
 .collapse-data .collapse-content{display: none;}
 .collapse-data.active .collapse-content{display: block;}
 .collapse-data.active .collapse-title svg{transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);}
 
+.single-product p{color: #AFC0CE;}
+
+.product-details{}
+.product-details form{overflow: hidden;}
+.product-details form label{color: #AFC0CE;}
+.product-details form textarea{border: 1px solid #DCEDFB;border-radius: 8px;}
+.product-details form .increment{width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;border: 1px solid #dfdfdf;border-radius: 50%;color: var(--second);font-size: 30px;cursor: pointer;}
+.product-details form .total-qty{font-size: 19px;color: #333;}
+.product-details form button{border: 1px solid var(--second);background-color: var(--second);color: #fff;border-radius: 25px;height: 45px;width: 100%;text-transform: uppercase;font-weight: 600;max-width: 170px;}
+.product-details form button:hover{color: var(--second);background-color: transparent;}
 
 @media screen and (max-width: 767px){
   header{padding: 12.5px 0;}

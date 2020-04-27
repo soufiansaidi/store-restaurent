@@ -13,6 +13,7 @@ import Register from './Pages/Register'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
 import Menus from './Pages/Menus'
+import SingleProduct from './Pages/SingleProduct'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/contact"><Contact /></Route>
           <Route path="/about"><About /></Route>
           <Route path="/menus"><Menus /></Route>
+          <Route path="/product-details/:slug"><SingleProduct /></Route>
         </Switch>
       </ApplicationContextProvider>
     </Router>
