@@ -41,10 +41,12 @@ export default function SingleProduct() {
                             <textarea rows="5" name="Special_instructions" id="" class="form-control"></textarea>
                         </div>
                         <div class="row mt-4 align-items-center justify-content-between">
-                            <div class="col-6 d-flex align-items-center justify-content-between">
-                                <div className="increment" onClick={ () => Decrease() }>-</div>
-                                <div className="total-qty">{ Qty }</div>
-                                <div className="increment" onClick={ () => Increase() }>+</div>
+                            <div class="col-6">
+                                <div class="qty-wrap d-flex align-items-center justify-content-between">
+                                    <div className="increment" onClick={ () => Decrease() }>-</div>
+                                    <div className="total-qty">{ Qty }</div>
+                                    <div className="increment" onClick={ () => Increase() }>+</div>
+                                </div>
                             </div>
                             <div class="col-6 d-flex justify-content-end">
                                 <button type="submit">Add to Order</button>

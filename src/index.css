@@ -136,10 +136,12 @@ p.sub{font-size: 18px;color: var(--primary);}
 .product-details form{overflow: hidden;}
 .product-details form label{color: #AFC0CE;}
 .product-details form textarea{border: 1px solid #DCEDFB;border-radius: 8px;}
-.product-details form .increment{width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;border: 1px solid #dfdfdf;border-radius: 50%;color: var(--second);font-size: 30px;cursor: pointer;}
-.product-details form .total-qty{font-size: 19px;color: #333;}
 .product-details form button{border: 1px solid var(--second);background-color: var(--second);color: #fff;border-radius: 25px;height: 45px;width: 100%;text-transform: uppercase;font-weight: 600;max-width: 170px;}
 .product-details form button:hover{color: var(--second);background-color: transparent;}
+
+.qty-wrap{max-width: 160px;width: 100%;}
+.qty-wrap .increment{width: 40px;height: 40px;display: flex;align-items: center;justify-content: center;border: 1px solid #dfdfdf;border-radius: 50%;color: var(--second);font-size: 30px;cursor: pointer;}
+.qty-wrap .total-qty{font-size: 19px;color: #333;}
 
 @media screen and (max-width: 767px){
   header{padding: 12.5px 0;}
