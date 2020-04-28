@@ -18,7 +18,7 @@ const Menu = ({ logo, title, text, bg = null }) => {
                         <IoIosStarOutline />
                         Favorites
                     </Link>
-                    <Link to="">
+                    <Link to="/order/details">
                         <IoIosPaper />
                         orders
                     </Link>
@@ -29,9 +29,9 @@ const Menu = ({ logo, title, text, bg = null }) => {
                 </div>
                 <ul>
                     <li><Link to="/menus">Menu <IoIosArrowForward /></Link></li>
-                    <li><Link to="/">Branches <IoIosArrowForward /></Link></li>
-                    <li><Link to="/">About us <IoIosArrowForward /></Link></li>
-                    <li><Link to="/">Contact us <IoIosArrowForward /></Link></li>
+                    <li><Link to="/branches">Branches <IoIosArrowForward /></Link></li>
+                    <li><Link to="/about">About us <IoIosArrowForward /></Link></li>
+                    <li><Link to="/Contact">Contact us <IoIosArrowForward /></Link></li>
                     <li><Link to="/">عربي <IoIosArrowForward /></Link></li>
                 </ul>
                 <div className="my-account"><Link to="">My Account <IoIosArrowForward /></Link></div>

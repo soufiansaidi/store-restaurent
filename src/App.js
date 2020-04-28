@@ -13,8 +13,11 @@ import Register from './Pages/Register'
 import Contact from './Pages/Contact'
 import About from './Pages/About'
 import Menus from './Pages/Menus'
+import Branches from './Pages/Branches'
+import BranchesDetails from './Pages/BranchesDetails'
 import SingleProduct from './Pages/SingleProduct'
 
+import OrderDetails from './Pages/OrderDetails'
 import OrderContact from './Pages/OrderContact'
 import OrderDeliveryAddress from './Pages/OrderDeliveryAddress'
 import OrderPayment from './Pages/OrderPayment'
@@ -31,9 +34,12 @@ function App() {
           <Route path="/about"><About /></Route>
           <Route path="/menus"><Menus /></Route>
           <Route path="/product-details/:slug"><SingleProduct /></Route>
+          <Route path="/order/details"><OrderDetails /></Route>
           <Route path="/order/contact-infos"><OrderContact /></Route>
           <Route path="/order/delivery-address"><OrderDeliveryAddress /></Route>
           <Route path="/order/payment"><OrderPayment /></Route>
+          <Route path="/branches"><Branches /></Route>
+          <Route path="/branches-details"><BranchesDetails /></Route>
         </Switch>
       </ApplicationContextProvider>
     </Router>
