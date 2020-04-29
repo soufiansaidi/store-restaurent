@@ -26,26 +26,26 @@ const Contact = () => {
                     <p className="sub">You Are Most Welcomed At title</p>
 
                     <form>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="">Name</label>
-                            <input type="text" name="" id="" class="form-control" placeholder="" />
+                            <input type="text" name="" id="" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="">Mobile Number</label>
                             <div className="row">
-                                <div className="col-3 pr-0"><input type="text" name="" id="" class="form-control text-center" placeholder="+965" /></div>
-                                <div className="col-9"><input type="text" name="" id="" class="form-control" placeholder="" /></div>
+                                <div className="col-3 pr-0"><input type="text" name="" id="" className="form-control text-center" placeholder="+965" /></div>
+                                <div className="col-9"><input type="text" name="" id="" className="form-control" placeholder="" /></div>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="">Email</label>
-                            <input type="email" name="" id="" class="form-control" placeholder="" />
+                            <input type="email" name="" id="" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="">Your message</label>
-                            <textarea type="email" name="" class="form-control" rows="6"></textarea>
+                            <textarea type="email" name="" className="form-control" rows="6"></textarea>
                         </div>
-                        <div class="form-group mt-4"><button className="btn">Send</button></div>
+                        <div className="form-group mt-4"><button className="btn">Send</button></div>
                     </form>
                 </div>
             </section>

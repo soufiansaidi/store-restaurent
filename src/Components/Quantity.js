@@ -14,7 +14,7 @@ export default function Quantity() {
     }
 
     return (
-        <div class="qty-wrap d-flex align-items-center justify-content-between">
+        <div className="qty-wrap d-flex align-items-center justify-content-between">
             <div className="increment" onClick={ () => Decrease() }>-</div>
             <div className="total-qty">{ Qty }</div>
             <div className="increment" onClick={ () => Increase() }>+</div>

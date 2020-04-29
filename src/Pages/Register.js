@@ -28,30 +28,30 @@ const Register = () => {
                     <h2 className="text-uppercase title">My Account</h2>
                     <p className="sub">Please Create an account</p>
                     <form>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="">First name</label>
-                            <input type="text" name="" id="" class="form-control" placeholder="" />
+                            <input type="text" name="" id="" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="">Last name</label>
-                            <input type="text" name="" id="" class="form-control" placeholder="" />
+                            <input type="text" name="" id="" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="">Email or Mobile</label>
-                            <input type="text" name="" id="" class="form-control" placeholder="" />
+                            <input type="text" name="" id="" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="">Password</label>
-                            <input type="password" name="" id="" class="form-control" placeholder="" />
+                            <input type="password" name="" id="" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="">Confirm Password</label>
-                            <input type="password" name="" id="" class="form-control" placeholder="" />
+                            <input type="password" name="" id="" className="form-control" placeholder="" />
                         </div>
-                        <div class="form-group mt-5">
+                        <div className="form-group mt-5">
                             <button className="btn">Signup</button>
                         </div>
-                        <div class="go-signup my-4">
+                        <div className="go-signup my-4">
                             <Link className="btn" to="/login">Login</Link>
                         </div>
                     </form>

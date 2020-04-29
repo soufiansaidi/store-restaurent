@@ -36,21 +36,21 @@ export default function SingleProduct() {
                         </div>
                     </div>
 
-                    <div class="form-group col-12">
+                    <div className="form-group col-12">
                         <label for="">Add Special Instructions</label>
-                        <textarea rows="5" onChange={ (e) => setInstructions(e.val) } value={ setInstructions } class="form-control"></textarea>
+                        <textarea rows="5" onChange={ (e) => setInstructions(e.val) } value={ setInstructions } className="form-control"></textarea>
                     </div>
 
                     <div className="sticky-bar col-12 col-md-6 offset-md-3">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-6">
-                                <div class="qty-wrap d-flex align-items-center justify-content-between">
+                        <div className="row align-items-center justify-content-between">
+                            <div className="col-6">
+                                <div className="qty-wrap d-flex align-items-center justify-content-between">
                                     <div className="increment" onClick={ () => Decrease() }>-</div>
                                     <div className="total-qty">{ Qty }</div>
                                     <div className="increment" onClick={ () => Increase() }>+</div>
                                 </div>
                             </div>
-                            <div class="col-6 d-flex justify-content-end">
+                            <div className="col-6 d-flex justify-content-end">
                                 <Link to="/order/contact-infos">Add to Order</Link>
                             </div>
                         </div>

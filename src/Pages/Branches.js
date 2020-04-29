@@ -16,21 +16,21 @@ const Brachers = () => {
             <section>
                 <div className="container branches-page pb-5 mb-4">
                     <h2 className="text-uppercase title">Branches</h2>
-                    <ul class="list-group">
-                        <li class="list-group-item p-0 border-left-0 border-right-0">
-                            <Link to="/branches-details" className="color-primary py-2 d-flex justify-content-between align-items-center">Al Grain <span class="badge"><IoIosArrowForward /></span></Link>
+                    <ul className="list-group">
+                        <li className="list-group-item p-0 border-left-0 border-right-0">
+                            <Link to="/branches-details" className="color-primary py-2 d-flex justify-content-between align-items-center">Al Grain <span className="badge"><IoIosArrowForward /></span></Link>
                         </li>
-                        <li class="list-group-item p-0 border-left-0 border-right-0">
-                            <Link to="/branches-details" className="color-primary py-2 d-flex justify-content-between align-items-center">Al Grain <span class="badge"><IoIosArrowForward /></span></Link>
+                        <li className="list-group-item p-0 border-left-0 border-right-0">
+                            <Link to="/branches-details" className="color-primary py-2 d-flex justify-content-between align-items-center">Al Grain <span className="badge"><IoIosArrowForward /></span></Link>
                         </li>
-                        <li class="list-group-item p-0 border-left-0 border-right-0">
-                            <Link to="/branches-details" className="color-primary py-2 d-flex justify-content-between align-items-center">Al Grain <span class="badge"><IoIosArrowForward /></span></Link>
+                        <li className="list-group-item p-0 border-left-0 border-right-0">
+                            <Link to="/branches-details" className="color-primary py-2 d-flex justify-content-between align-items-center">Al Grain <span className="badge"><IoIosArrowForward /></span></Link>
                         </li>
-                        <li class="list-group-item p-0 border-left-0 border-right-0">
-                            <Link to="/branches-details" className="color-primary py-2 d-flex justify-content-between align-items-center">Al Grain <span class="badge"><IoIosArrowForward /></span></Link>
+                        <li className="list-group-item p-0 border-left-0 border-right-0">
+                            <Link to="/branches-details" className="color-primary py-2 d-flex justify-content-between align-items-center">Al Grain <span className="badge"><IoIosArrowForward /></span></Link>
                         </li>
-                        <li class="list-group-item p-0 border-left-0 border-right-0">
-                            <Link to="/branches-details" className="color-primary py-2 d-flex justify-content-between align-items-center">Al Grain <span class="badge"><IoIosArrowForward /></span></Link>
+                        <li className="list-group-item p-0 border-left-0 border-right-0">
+                            <Link to="/branches-details" className="color-primary py-2 d-flex justify-content-between align-items-center">Al Grain <span className="badge"><IoIosArrowForward /></span></Link>
                         </li>
                     </ul> 
                 </div>

@@ -16,20 +16,20 @@ const OrderDeliveryAddress = () => {
                     <h2 className="text-uppercase title">Contact Info</h2>
                     <p className="sub">We'll use it to get back to you for order updates</p>
 
-                    <div class="form-group">
+                    <div className="form-group">
                         <label for="">Name</label>
-                        <input type="text" name="" id="" class="form-control" placeholder="" />
+                        <input type="text" name="" id="" className="form-control" placeholder="" />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label for="">Mobile Number</label>
                         <div className="row">
-                            <div className="col-3 pr-0"><input type="text" name="" id="" class="form-control text-center" placeholder="+965" /></div>
-                            <div className="col-9"><input type="text" name="" id="" class="form-control" placeholder="" /></div>
+                            <div className="col-3 pr-0"><input type="text" name="" id="" className="form-control text-center" placeholder="+965" /></div>
+                            <div className="col-9"><input type="text" name="" id="" className="form-control" placeholder="" /></div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label for="">Email</label>
-                        <input type="email" name="" id="" class="form-control" placeholder="" />
+                        <input type="email" name="" id="" className="form-control" placeholder="" />
                     </div>
                     <div className="start-ordering">
                         <Link to="/order/delivery-address" className="btn">Next</Link>
