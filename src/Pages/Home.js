@@ -16,10 +16,10 @@ const Home = () => {
                     <div className="delivery-pickup mb-3">
                         <div className="row">
                             <div className="col-6 text-center border-right">
-                                <Link to="/">Delivery</Link>
+                                <Link to="/delivery-mode">Delivery</Link>
                             </div>
                             <div className="col-6 text-center">
-                                <Link to="/">Pick Up</Link>
+                                <Link to="/delivery-mode">Pick Up</Link>
                             </div>
                         </div>
                     </div>

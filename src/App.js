@@ -22,6 +22,8 @@ import OrderContact from './Pages/OrderContact'
 import OrderDeliveryAddress from './Pages/OrderDeliveryAddress'
 import OrderPayment from './Pages/OrderPayment'
 
+import DeliveryMode from './Pages/DeliveryMode'
+
 function App() {
   return (
     <Router>
@@ -40,6 +42,8 @@ function App() {
           <Route path="/order/payment"><OrderPayment /></Route>
           <Route path="/branches"><Branches /></Route>
           <Route path="/branches-details"><BranchesDetails /></Route>
+
+          <Route path="/delivery-mode"><DeliveryMode /></Route>
         </Switch>
       </ApplicationContextProvider>
     </Router>
